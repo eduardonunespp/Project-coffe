@@ -1,0 +1,124 @@
+
+@import "feedback.css";
+@import "more-blogs.css";
+@import "footer.css";
+@import "header.css";
+@import "home.css";
+@import "sobre.css";
+@import "cardapio.css";
+@import "produtos.css";
+
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+        --background-principal: #05060A;
+}
+
+body{
+    margin: 0px;
+    background-color: #020204;
+    height: 1000px;
+}
+
+.backModal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.727);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.backModal.active_modal{
+    display: flex;
+}
+
+.backModal .modal{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(21, 23, 26);
+    display: block;
+    border-radius: 10px;
+    padding: 30px 30px;
+    position: relative;
+}
+
+.modal label{
+    color: #fff;
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #CCAD77;
+}
+
+.modal input{
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+.modal button{
+    width: 100px;
+    padding: 14px 14px;
+    border-radius: 7px;
+    border: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #CCAD77;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.modal button:hover{
+    background-color: #695737;
+}
+
+.modal .fa-xmark{
+    position: absolute;
+    color: #fff;
+    font-size: 1.3em;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+[data-set="animation"]{
+    transition: 1s;
+    opacity: 0;
+}
+
+[data-set="animation"].section_anima{
+    animation-name: show-section;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+@keyframes show-section{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+

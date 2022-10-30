@@ -1,0 +1,57 @@
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #13131A;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .links{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links button{
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #13131A;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.links button:hover{
+    background-color: #CCAD77;
+}
+
+.links .fa-brands{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+footer p{
+    max-width: 600px;
+    text-align: center;
+    color: #ccc;
+    font-size: 1.0em;
+    
+
+}
+
+footer span{
+    font-size: 1.0em;
+    color: #ccc;
+}
+
+#developed{
+    color: #CCAD77;
+    font-weight: bold;
+}

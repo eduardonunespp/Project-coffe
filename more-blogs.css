@@ -1,0 +1,161 @@
+
+.mais-blogs{
+    width: 100%;
+    height: 600px;
+}
+
+.mais-blogs .contactmain {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mais-blogs .contactbox{
+    width: 32%;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+
+}
+
+.contactbox .top1{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    
+}
+
+.img1{
+    background-image: url(img/blog-1.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    transition: 0.5s;
+    
+    
+}
+
+.contactbox .top2{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    
+}
+
+.img2{
+    background-image: url(img/blog-2.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    transition: 0.5s;
+    
+}
+
+.contactbox .top3{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    
+}
+
+.img3{
+    background-image: url(img/blog-3.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    transition: 0.5s;
+    
+}
+
+.contactbox:hover .img1{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.contactbox:hover .img2{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.contactbox:hover .img3{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.contactbox .bottom{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.bottom h2{
+    color: #fff;
+    font-size: 2em;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+
+}
+
+.bottom p{
+    color: #CCAD77;
+    font-size: 1.1em;
+    margin: 5px 0px;
+}
+
+.bottom span{
+    color: #ccc;
+    font-size: 0.9em;
+    display: block;
+}
+
+.contactbox .bottom button{
+    padding: 15px;
+    width: 130px;
+    border-radius: 7px;
+    border: none;
+    background-color: #CCAD77;
+    color: white;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.contactbox .bottom button:hover{
+    background-color: #695737;
+}
+
+
+.mais-blogs .title{
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.mais-blogs .spanh2{
+    color: #CCAD77;
+}
+
+@media (max-width: 800px){
+    main .mais-blogs{
+        height: 1700px;
+    }
+
+    .mais-blogs .contactmain{
+        flex-direction: column;
+        height: 1550px;
+    }
+
+    .contactmain .contactbox{
+        width: 100%;
+    }
+}

@@ -1,0 +1,226 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #010103;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    z-index: 100;
+    position: fixed;
+}
+
+header img{
+    width: 75px;
+    height: 60px;
+}
+
+header a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    padding: 5px 0px;
+    margin: 0px 10px;
+    transition: 0.6s;
+    border-bottom: 1px inset #ffffff00;
+}
+
+header a:hover{
+    color: #CCAD77;
+    border-bottom: 1px solid #CCAD77;
+}
+
+header .fa-magnifying-glass, .fa-cart-shopping, .fa-right-to-bracket, .fa-bars{
+    color: white;
+    font-size: 1.3em;
+    margin: 0px 10px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.fa-bars{
+    display: none;
+}
+
+header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket:hover, .fa-bars:hover{
+    color: #CCAD77;
+    font-size: 1.3em;
+    margin: 0px 10px;
+}
+
+.links-header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa{
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    transform: translateY(-100px);
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.pesquisa .fa-magnifying-glass{
+    position: relative;
+    top: 3px;
+}
+
+.searchinput{
+    border: none;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.7s;
+    display: inline-block;
+}
+
+.pesquisa.active{
+    transform: translateY(60px);
+    z-index: 50;
+    opacity: 1;
+}
+
+.market{
+    position: absolute;
+    width: 350px;
+    height: 600px;
+    background-color: white;
+    top: 100px;
+    right: 0px;
+    transform: translateX(350px);
+    transition: 0.7s;
+}
+
+.market.active_market{
+    transform: translateX(0px);
+}
+
+.market-flex{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.market-flex h2{
+    font-size: 1.2em;
+}
+
+.market-flex .fa-xmark{
+    font-size: 1.3em;
+    color: #b1b1b1;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.market-flex .fa-xmark:hover{
+    color: black;
+}
+
+.market-flex span{
+    color: #CCAD77;
+    position: relative;
+    bottom: 10px;
+}
+
+.market button{
+    width: 90%;
+    border: none;
+    padding: 15px 10px;
+    background-color: #CCAD77;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.market button:hover{
+    background-color: #695737;
+    color: #fff;
+}
+
+.links-header .fa-xmark{
+    color: black;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.6s;
+    display: none;
+}
+
+.links-header .fa-xmark:hover{
+    color: #CCAD77;
+}
+
+@media (max-width: 800px){
+
+   
+    .fa-bars{
+        display: inline-block;
+    }
+
+    .links-header{
+        position: absolute;
+        left: 0px;
+        top: 100px;
+        background-color: #fff;
+        width: 50%;
+        height: 350px;
+        padding: 20px 10px;
+        transform: translateX(-400px);
+        transition: 0.6s;
+    }
+
+    .links-header.menuMobileActive{
+        transform: translateX(0px);
+    }
+
+    .links-filho{
+        width: 100%;
+    }
+
+    .links-header .links-filho a{
+        display: block;
+        color: black;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        margin: 2px 0px;
+        transition: 0.4s;
+        
+
+    }
+
+    .links-header .links-filho a:hover{
+        background-color: #CCAD77;
+        color: white;
+
+    }
+
+    .links-header .fa-xmark{
+        display: block;
+    }
+
+    .pesquisa{
+        right: 10px;
+    }
+
+    .fa-bars.barRotate{
+        transform: rotate(90deg);
+    }
+
+}

@@ -1,0 +1,101 @@
+
+.feedback{
+    width: 100%;
+    height: 600px;
+}
+
+.feedback .feedmain {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feedmain .feedbox{
+    width: 32%;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.6s;
+
+}
+
+.feedback h2{
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.feedback span{
+    color: #CCAD77;
+
+}
+
+.feedbox .text-lorem{
+    color: #ccc;
+    text-align: center;
+    display: block;
+    font-size: 0.9em;
+    line-height: 1.5em;
+
+}
+
+.feedbox .persona{
+    color: #ccc;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.feedback .fa-star{
+    color: #CCAD77;
+}
+
+#picperson{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+}
+#picasps{
+    width: 60px;
+}
+
+.feedbox:hover{
+    background-color: aliceblue;
+}
+
+.feedbox:hover span{
+    color: rgb(0,0,0)
+}
+
+.feedbox:hover .fa-star{
+    color: rgb(0,0,0)
+}
+
+@media (max-width: 800px) {
+    main .feedback{
+        height: 1300px;
+        
+    }
+
+    .feedback .feedmain{
+        height: 90%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .feedmain .feedbox{
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+    }
+}

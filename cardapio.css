@@ -1,0 +1,129 @@
+main .cardapio{
+    width: 100%;
+    height: 850px;
+    padding-top: 80px;
+
+
+}
+
+.cardapio h1{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    
+}
+
+
+.cardapio-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 90%;
+  
+    margin: auto
+    
+    
+}
+
+.cardapio .top, .bottom{
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+
+}
+
+.box{
+    width: 30%;
+    height: 300px;
+    background-color: #020204;
+    border: 1px solid #ccc;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.8s;
+}
+
+.box:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.box:hover h2, .box:hover span{
+    color: #010103;
+}
+
+.box img{
+    width: 70px;
+    height: 70px;
+}
+
+.box h2, .box span{
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+}
+
+.box button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CCAD77;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+.box button:hover{
+    background-color: #695737;
+    color: white;
+}
+
+.box button:hover .fa-cart-shopping{
+    animation-name: kart-show;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kart-show {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 800px) {
+    main .cardapio{
+        height: 2150px;
+       
+    }
+
+    .cardapio .cardapio-flex{
+        height: 90%;
+        justify-content: center;
+    }
+
+    .cardapio-flex .top{
+        flex-direction: column;
+    }
+
+    .cardapio-flex .bottom{
+        flex-direction: column;
+    }
+
+    .cardapio-flex .box{
+        width: 100%;
+    }
+}

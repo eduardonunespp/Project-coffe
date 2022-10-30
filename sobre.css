@@ -1,0 +1,96 @@
+main .sobre{
+    width: 100%;
+    height: 600px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.sobre h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.sobre .content-main{
+    width: 90%;
+    height: 70%;
+    background-color: #13131A;
+    display: flex;
+    flex-wrap: row wrap;
+    position: relative;
+    border-bottom: 3px solid #13131A;
+    z-index: -1;
+}
+
+.content-main .img-sobre{
+    width: 50%;
+    background-image: url(img/about-img.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.content-main .text-sobre{
+    background-color: #13131A;
+    width: 50%;
+    padding: 20px 20px;
+}
+
+.text-sobre h2{
+    color: #fff;
+    font-size: 2em;
+}
+
+.text-sobre p{
+    color: rgb(208, 208, 208);
+    line-height: 1.5em;
+    font-size: 0.9em;
+    word-spacing: 5px;
+}
+
+.content-main button{
+    padding: 15px 40px;
+    border: none;
+    background-color: #a68856;
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.6s;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.content-main button:hover{
+    background-color: #695737;
+    transform: translateX(-30px);
+    color: white;
+}
+
+@media (max-width: 800px){
+
+    main .sobre{
+        height: 900px;
+    }
+
+    .sobre .content-main{
+        flex-direction: column;
+        height: 85%;
+    }
+
+    .content-main .img-sobre{
+        width: 100%;
+        height: 50%;
+        
+    }
+
+    .content-main .text-sobre{
+        width: 100%;
+        height: 50%;
+        padding: 0px 20px;
+    }
+}
