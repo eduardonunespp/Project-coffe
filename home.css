@@ -61,7 +61,29 @@ main .home{
         text-align: center;
     }
 
+    .home button{
+        animation-name: buttonAnimation;
+        animation-duration: 2s;
+        animation-timing-function: initial;
+        animation-iteration-count: infinite;
+        
+    }
+
+    @keyframes buttonAnimation {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-20px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+
     .home button:hover{
         transform: translateX(0px);
     }
+
+    
 }
