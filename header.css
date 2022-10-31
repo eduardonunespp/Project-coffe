@@ -221,6 +221,19 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
 
     .fa-bars.barRotate{
         transform: rotate(90deg);
+    
+    
     }
+
+    header{
+        height: 80px;
+    }
+
+    header .fa-magnifying-glass, .fa-cart-shopping, .fa-right-to-bracket, .fa-bars{
+       font-size: 1.1em;
+
+    }
+
+
 
 }
