@@ -183,7 +183,6 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
         transform: translateX(-400px);
         transition: 0.6s;
         border-radius: 0px 0px 5px 0px;
-        box-shadow: 2px 2px 0px rgb(48, 48, 48);
     }
 
     .links-header.menuMobileActive{
