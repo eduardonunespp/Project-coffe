@@ -175,7 +175,7 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
     .links-header{
         position: absolute;
         left: 0px;
-        top: 100px;
+        top: 80px;
         background-color: #fff;
         width: 50%;
         height: 350px;
@@ -217,6 +217,10 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
 
     .pesquisa{
         right: 10px;
+    }
+
+    .market{
+        top: 80px;
     }
 
     .fa-bars.barRotate{
