@@ -59,7 +59,7 @@ footer span{
 @media (max-width: 700px) {
     .links button{
         width: 48x;
-        height: 48px;
+        height: 38px;
     }
 
     footer p{
