@@ -234,6 +234,11 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
 
     }
 
+    header img{
+        width: 65px;
+        height: 55px;
+    }
+
 
 
 }
