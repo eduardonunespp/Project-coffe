@@ -36,7 +36,7 @@ header .fa-magnifying-glass, .fa-cart-shopping, .fa-right-to-bracket, .fa-bars{
     font-size: 1.3em;
     margin: 0px 10px;
     cursor: pointer;
-    transition: 0.6s;
+    transition: 0.3s;
 }
 
 .fa-bars{
@@ -45,7 +45,7 @@ header .fa-magnifying-glass, .fa-cart-shopping, .fa-right-to-bracket, .fa-bars{
 
 header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket:hover, .fa-bars:hover{
     color: #CCAD77;
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin: 0px 10px;
 }
 
