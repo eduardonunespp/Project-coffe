@@ -64,10 +64,9 @@ main .home{
 
     .home button{
         animation-name: buttonAnimation;
-        animation-duration: 2s;
+        animation-duration: 2.5s;
         animation-timing-function: initial;
         animation-iteration-count: infinite;
-        
     }
 
     @keyframes buttonAnimation {
@@ -75,7 +74,7 @@ main .home{
             transform: translateY(0px);
         }
         50%{
-            transform: translateY(-20px);
+            transform: translateY(-15px);
         }
         100%{
             transform: translateY(0px);
