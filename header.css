@@ -232,6 +232,9 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
 
     header{
         height: 80px;
+        padding: 0px 30px;
+        justify-content: space-between;
+
     }
 
     header .fa-magnifying-glass, .fa-cart-shopping, .fa-right-to-bracket, .fa-bars{
