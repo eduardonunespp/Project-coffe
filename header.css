@@ -92,6 +92,8 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
     right: 0px;
     transform: translateX(350px);
     transition: 0.7s;
+    border-radius: 0px 0px 0px 5px;
+
 }
 
 .market.active_market{
@@ -238,7 +240,7 @@ header .fa-magnifying-glass:hover, .fa-cart-shopping:hover, .fa-right-to-bracket
     }
 
     header .fa-magnifying-glass, .fa-cart-shopping, .fa-right-to-bracket, .fa-bars{
-       font-size: 1.2em;
+       font-size: 1.15em;
 
     }
 
