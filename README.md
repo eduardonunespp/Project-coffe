@@ -34,4 +34,7 @@ Bem-vindo ao projeto da Loja de Café! Este é um projeto em HTML e CSS que simu
 
 <hr>
 
+Este projeto foi desenvolvido como um exemplo fictício de uma loja de café usando HTML e CSS.
+As imagens utilizadas neste projeto são apenas ilustrativas. Certifique-se de ter as permissões necessárias ao utilizar imagens reais em seu projeto.
+
 O projeto está disponível em: <strong><a href="https://eduardonunespp.github.io/Project-coffe/">coffe-page</a></strong> 🚀
