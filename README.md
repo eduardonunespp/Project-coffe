@@ -1,3 +1,8 @@
+
+![WhatsApp Image 2023-06-09 at 11 18 35](https://github.com/eduardonunespp/Project-coffe/assets/100363170/b0744e11-e38a-498f-8abd-e69e8e50c226)
+
+<hr>
+
 <div>
  <h1>Página comercial de café</h1>
  
